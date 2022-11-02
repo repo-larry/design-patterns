@@ -9,15 +9,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="proxy" />
         <module name="demo" />
+        <module name="acting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="acting" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="proxy" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="acting" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
